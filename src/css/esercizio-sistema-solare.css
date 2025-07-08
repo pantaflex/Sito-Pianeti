@@ -1,0 +1,132 @@
+
+*{box-sizing: border-box;}
+
+body{
+    
+    margin: 0px;
+
+}
+.header{ 
+    color: yellow;
+    background-color: rgb(10, 10, 108);
+    font-size: 100px;
+   margin: 0px;
+    text-align: center;
+    min-height: 300px;
+    padding: 60px;
+    text-shadow: 4px 4px 0px rgb(159, 159, 8);
+    font-family:"IBM Plex Serif", serif;
+    
+}
+
+span{text-align: center;
+font-size: xx-large;}
+.span{text-align: center;}
+
+p{padding: 3px;
+}
+
+.elenco{padding-left: 100px;}
+li{padding: 20px;}
+
+ul{ list-style-image: url(../../assets/img/icons8-pianeta-venere-50.png);}
+
+
+.presentazione{
+         padding: 50px;
+
+         background-color: #fca311ff;
+         border: 5px solid black;
+         font-size:x-large;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         margin: 25px;
+}
+
+.scheda{border: 5px solid black;
+        background-color: white;
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        /* width: 300px; */
+       
+            font-family: "IBM Plex Serif", serif;
+            font-weight: 100;
+            font-style: normal;
+        
+
+
+        margin-left: 45px;
+        margin-top: 30px;
+    
+      
+    }
+
+.contenuto{border-top: solid 5px black;
+        font-family:"IBM Plex Serif", serif;
+        padding: 50px;
+        font-size: larger;}
+
+.footer{border-top: solid 5px black;
+        text-align: center;
+        font-family:"IBM Plex Serif", serif;
+        padding: 10px;}
+
+h2{text-align: center;
+margin: 0px;
+padding: 10px;
+background-color: rgb(10, 10, 108);
+color: yellow;}
+
+.footer-sito{background-color:#fca311ff;
+            border-top: 5px solid black;
+            padding-top: 150px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            font-family: "IBM Plex Serif", serif;
+            font-style: italic;
+            font-weight: bold;   
+            min-height: 200px;
+            margin-top: 200px; }
+
+
+
+    @font-face {
+        font-family: "IBM Plex Serif", serif;
+        font-display: swap;
+            font-weight: 100;
+            font-style: normal;
+        
+        src: url(../../assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf) format(truetype);
+    }
+
+
+
+/* SOLUZIONI DOMANDE TEST */
+
+
+    /* Perchè se affianchi le card con display:inline-block le card non stanno tutte sulla stessa riga?
+(Qui si intende che stiamo usando box-sizing:border-box per gestire eventuali bordi e padding e che il margine non c'è o se c'è lo stai gestendo con calc() e
+ quindi l'ingombro complessivo delle card è esattamente 100% ma nonostante ciò, cioè nonostante non si superi la larghezza della riga, le card non stanno tutte sulla stessa riga e qui ti si chiede perchè)
+(Per semplificare immagina che hai 2 card semplici senza margine,senza bordo e senza padding, tutte e due con display:inline-block e con width:50%  
+Queste non stanno sulla stessa riga e ti viene chiesto perchè)
+ 
+
+1Per via dello spazio che c'è nell'html tra una card e l'altra che causa che l'ingombro di tutte le card che dovrebbero stare sulla stessa riga superi il 100%
+
+
+Cosa serve per risolvere il problema dell'allineamento su un'unica riga delle card oltre a dare display:inline-block?
+
+
+
+2All'elemento genitore delle card devi dare font-size:0 , questo cancella il contenuto testuale delle card come side-effect e per ripristinarlo nelle card devi dare font-size:16px ad esempio.
+Se hai un elemento con altezza fissa e un'unica riga di testo all'interno che tecnica puoi usare per centrane verticalmente il contenuto?
+
+
+3Puoi dare all'elemento la line-height pari all'altezza dell'elemento
+
+
+Quale tag è buona norma usare per inserire le informazioni di copyright e/o licenza?
+
+
+
+4La best-practice raccomanda di usare il tag <small> */
