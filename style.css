@@ -29,7 +29,7 @@ p{padding: 3px;
 .elenco{padding-left: 100px;}
 li{padding: 20px;}
 
-ul{ list-style-image: url(../../assets/img/icons8-pianeta-venere-50.png);}
+ul{ list-style-image: url(./root/assets/img/icons8-pianeta-venere-50.png)}
 
 
 .presentazione{
